@@ -1,0 +1,70 @@
+module Cronometro(
+	input clk, 
+	input rst, 
+	input start_stop, 
+	output reg [9:0] ms, 
+	output reg [5:0] seg
+
+
+
+);
+
+
+wire clk_ms;
+wire clk_seg;
+reg andando;
+
+CLK_divider #(.FREQ(1000) div_ms (
+	.clk(clk),
+	.rst(rst),
+	.clk_div(clk_ms)
+
+
+);
+
+
+CLK_divider #(.FREQ(1) div_seg (
+	.clk(clk),
+	.rst(rst),
+	.clk_div(clk_seg)
+
+
+);
+
+ // Toggle start/stop
+    always @(posedge start_stop or posedge rst)
+    begin
+        if(rst)
+            andando <= 0;
+        else
+            andando <= ~andando;
+    end
+
+    // Conteo milisegundos
+    always @(posedge clk_ms or posedge rst)
+    begin
+        if(rst)
+            ms <= 0;
+        else if(andando) begin
+            if(ms == 999)
+                ms <= 0;
+            else
+                ms <= ms + 1;
+        end
+    end
+
+    // Conteo segundos
+    always @(posedge clk_seg or posedge rst)
+    begin
+        if(rst)
+            seg <= 0;
+        else if(andando) begin
+            if(seg == 59)
+                seg <= 0;
+            else
+                seg <= seg + 1;
+        end
+    end
+
+endmodule
+

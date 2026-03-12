@@ -1,0 +1,9 @@
+module Sumatoria (
+	input clk, 
+	input rst, 
+	input [9:0] num,
+	input start, 
+	
+	
+);
+
