@@ -1,0 +1,22 @@
+module Practica_1_Numeros_primos_tb ();
+
+reg [3:0] SW;
+wire LED;
+
+Practica_1_Numeros_primos DUT (.SW(SW), .LED(LED));
+
+initial 
+	begin
+		$display("Simulación iniciada");
+		SW = 4'b0000; #10;
+		$display("Simulacion finalizada");
+		$stop;
+		$finish;
+	end
+
+initial 
+	begin 
+		$monitor("SW = %b, LED = %b", SW, LED);
+	end
+	
+endmodule

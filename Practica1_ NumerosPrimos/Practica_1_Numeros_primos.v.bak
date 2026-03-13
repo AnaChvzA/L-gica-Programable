@@ -1,0 +1,8 @@
+module Practica_1_Numeros_primos (
+	input [3:0] SW, 
+	output LED);
+	
+	always @(*)
+	 begin
+		case(SW)
+			
