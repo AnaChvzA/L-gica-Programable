@@ -52,7 +52,7 @@ Se desarrolló el testbench **`Practica_1_Numeros_primos_tb`** para verificar el
 ## Evidencias
 
 ### Diagrama RTL
-**RTL:** [imagen]
+**RTL:** [prueba2P1.png]
 
 ### Simulación (Waveform)
 **Waveform:** [imagen]
