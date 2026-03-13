@@ -61,7 +61,8 @@ Se desarrolló el testbench **`Practica_1_Numeros_primos_tb`** para verificar el
 ![Waveform](imagenes/WaveFormP1.png)
 
 ### FPGA en funcionamiento
-**DE10-Lite funcionando:** ![DE10-Lite funcionando](imagenes/PruebaP1.png)
+![DE10-Lite funcionando](imagenes/PruebaP1.png)
+![DE10-Lite funcionando](imagenes/Prueba2P1.png)
 
 ---
 
