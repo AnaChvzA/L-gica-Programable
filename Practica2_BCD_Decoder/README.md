@@ -38,8 +38,6 @@ Implementar un sistema en **Verilog** que lea un número de **10 bits** desde lo
 - `HEX2` → Centenas  
 - `HEX3` → Millares  
 
-> Nota: En este diseño cada `HEXx` usa 7 bits (segmentos del display).
-
 ---
 
 ## Descripción de módulos
@@ -88,17 +86,17 @@ El testbench **`BCD_module_tb.v`** verifica el funcionamiento del sistema comple
 ## Evidencias
 
 ### Diagrama RTL
-**RTL:** ![RTL](imagenes/RTLP2.png)
+ ![RTL](imagenes/RTLP2.png)
 
 ### Testbench
-**Testbench:** ![Testbench](imagenes/TbP2.png)
+ ![Testbench](imagenes/TbP2.png)
 
 ### Simulación (Waveform)
-**Waveform:** ![Waveform](imagenes/WaveFormP2.png)
+ ![Waveform](imagenes/WaveFormP2.png)
 
 ### FPGA en funcionamiento
-**DE10-Lite funcionando:** ![DE10-Lite funcionando](imagenes/PruebaP2.png)
-**DE10-Lite funcionando:** ![DE10-Lite funcionando](imagenes/Prueba2P2.png)
+ ![DE10-Lite funcionando](imagenes/PruebaP2.png)
+ ![DE10-Lite funcionando](imagenes/Prueba2P2.png)
 
 ---
 
