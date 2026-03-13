@@ -52,13 +52,17 @@ Se desarrolló el testbench **`Practica_1_Numeros_primos_tb`** para verificar el
 ## Evidencias
 
 ### Diagrama RTL
-**RTL:** [prueba2P1.png]
+**RTL:** ![RTL](imagenes/RTLP1.png)
+
+### Testbench
+**Testbench:** ![RTL](imagenes/TbP1.png)
 
 ### Simulación (Waveform)
-**Waveform:** [imagen]
+**Waveform:*![Waveform](imagenes/WaveFormP1.png)
 
 ### FPGA en funcionamiento
-**DE10-Lite funcionando:** [imagen]
+**DE10-Lite funcionando:** ![DE10-Lite funcionando](imagenes/PruebaP1.jpg)
+![DE10-Lite funcionando](imagenes/Prueba2P1.jpg)
 
 ---
 
