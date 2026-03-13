@@ -49,7 +49,7 @@ Se desarrolló el testbench **`Practica_1_Numeros_primos_tb`** para verificar el
 
 ---
 
-## Evidencias (agrega tus imágenes aquí)
+## Evidencias
 
 ### Diagrama RTL
 **RTL:** [imagen]
