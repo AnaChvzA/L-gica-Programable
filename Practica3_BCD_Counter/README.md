@@ -61,17 +61,17 @@ El testbench **`Cont100_tb.v`** genera un reloj y aplica reset para observar el 
 ## Evidencias (agrega tus imágenes aquí)
 
 ### Diagrama RTL
-**RTL:** ![RTL](imagenes/RTLP3.png)
+![RTL](imagenes/RTLP3.png)
 
 ### Testbench
-**Testbench:** ![Testbench](imagenes/TbP3.png)
+ ![Testbench](imagenes/TbP3.png)
 
 ### Simulación (Waveform)
-**Waveform:** ![Waveform](imagenes/WaveFormP3.png)
+ ![Waveform](imagenes/WaveFormP3.png)
 
 ### FPGA en funcionamiento
-**DE10-Lite funcionando:** ![DE10-Lite funcionando](imagenes/PruebaP3.png)
-**DE10-Lite funcionando:** ![DE10-Lite funcionando](imagenes/Prueba2P3.png)
+![DE10-Lite funcionando](imagenes/PruebaP3.png)
+![DE10-Lite funcionando](imagenes/Prueba2P3.png)
 
 ---
 
