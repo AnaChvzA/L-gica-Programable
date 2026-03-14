@@ -102,6 +102,7 @@ El testbench **`practica4_tb.v`** realiza la simulación:
 
 ### Diagrama RTL
 ![RTL](imagenes/RTLP4.png)
+![RTL](imagenes/RTL2P4.png)
 
 ### Testbench
 ![Testbench](imagenes/TbP4.png)
