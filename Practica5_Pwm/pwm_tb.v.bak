@@ -1,0 +1,68 @@
+
+
+module pwm_tb();
+
+    // Entradas del módulo
+    reg [9:0] sw;
+    reg clk;
+    reg rst;
+
+    // Salidas del módulo
+    wire pwm_out;
+    wire [0:6] hex0, hex1, hex2;
+
+    // Instancia del módulo PWM (UUT - Unit Under Test)
+    pwm uut (
+        .SW(sw),
+        .clk(clk),
+        .rst(rst),
+        .pwm_out(pwm_out),
+        .HEX0(hex0),
+        .HEX1(hex1),
+        .HEX2(hex2)
+    );
+
+    // Generación de Reloj (Supongamos 50MHz de entrada)
+    // 1 / 50MHz = 20ns por ciclo
+    always #10 clk = ~clk;
+
+    initial begin
+        // Inicialización de señales
+        clk = 0;
+        rst = 1;
+        sw = 10'd0;
+
+        // Reset del sistema
+        #100;
+        rst = 0;
+        #100;
+
+        // --- Caso 1: Ángulo 0° (Mínimo) ---
+        // El comparador debería estar cerca de 1000
+        sw = 10'd0;
+        $display("Probando Angulo 0 (SW=0)");
+        #500000; // Esperar a que pasen algunos ciclos de clk_div
+
+        // --- Caso 2: Ángulo 90° (Medio) ---
+        // El comparador debería estar cerca de 1500
+        sw = 10'd90;
+        $display("Probando Angulo 90 (SW=90)");
+        #500000;
+
+        // --- Caso 3: Ángulo 180° (Máximo) ---
+        // El comparador debería estar cerca de 2000
+        sw = 10'd180;
+        $display("Probando Angulo 180 (SW=180)");
+        #500000;
+
+        // --- Caso 4: Límite de seguridad ---
+        // Según tu código, si SW > 180, SW_TOP se queda en 180
+        sw = 10'd250;
+        $display("Probando Limite de Seguridad (SW=250)");
+        #500000;
+
+        $display("Simulacion finalizada.");
+        $stop;
+    end
+
+endmodule

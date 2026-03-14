@@ -1,0 +1,29 @@
+module pwm(
+	
+
+
+);
+
+
+
+
+
+
+//Contador Sincrono
+
+Cont100 CONT (
+
+
+)
+
+
+
+//Registro duty cycle
+
+
+
+//Comparador digital 
+
+
+
+//Registro de salida 
