@@ -1,0 +1,94 @@
+module practica4 (
+	input clk, 
+	input [3:0] SW, 
+	output reg [6:0] HEX0, 
+	output reg [6:0] HEX1,
+	output reg [6:0] HEX2,
+	output reg [6:0] HEX3
+
+
+);
+
+
+//clk divider 
+
+reg [25:0] counter;
+reg clk_div;
+
+always @(posedge clk)
+begin
+	counter <= counter + 1;
+	clk_div = counter[25];
+end
+
+parameter [15:0] password = 16'h1234;
+
+parameter S0 = 0, S1 = 1, S2 = 2, S3 = 3, S4 = 4, S5 = 5; // S4 = good, S5 = bad
+
+reg [1:0] state, next; 
+wire x = SW[3:0];
+wire reset = ~KEY[0];
+wire check = ~KEY[1];
+
+//Current state
+always @(posedge clk_d or posedge reset)
+begin
+	if(reset)
+		state <= S0;
+	else
+		state <= next;
+end
+
+
+//Next state
+
+
+always @(*)
+begin
+	case(state)
+		S0: //4 bits
+			if(x = password [0:3])
+				next = S1;
+			else
+				next = S6;
+		S1: //8 bits
+			if(x = password [5:8])
+				next = S2;
+			else 
+				next = S6;
+		S2: //12 bits
+			if(x = password [9:12])
+				next = S3;
+			else 
+				next = S6;}
+		S3: //16 bits
+			if(x = password [12:15])
+				next = S4;
+			else 
+				next = S5;
+		S4:
+			next = S4;
+		
+		S5:
+			next = S5;
+		default:
+			next = S0;
+		endcase 
+end 
+
+
+//Outputs
+
+always @(*)
+begin
+
+	HEX0 = 7b'1111111;
+
+end
+
+endmodule 
+	 
+	
+
+
+
