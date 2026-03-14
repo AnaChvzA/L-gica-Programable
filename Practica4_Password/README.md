@@ -110,8 +110,8 @@ El testbench **`practica4_tb.v`** realiza la simulación:
 ![Waveform](imagenes/WaveFormP4.png)
 
 ### FPGA en funcionamiento
-![DE10-Lite funcionando](imagenes/PruebaP4.png)
-![DE10-Lite funcionando](imagenes/Prueba2P4.png)
+**DE10-Lite funcionando:**![DE10-Lite funcionando](imagenes/PruebaP4.png)
+**DE10-Lite funcionando:**![DE10-Lite funcionando](imagenes/Prueba2P4.png)
 
 
 ---
