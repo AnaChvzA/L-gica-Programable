@@ -58,7 +58,7 @@ El testbench **`Cont100_tb.v`** genera un reloj y aplica reset para observar el 
 
 ---
 
-## Evidencias (agrega tus imágenes aquí)
+## Evidencias 
 
 ### Diagrama RTL
 ![RTL](imagenes/RTLP3.png)
