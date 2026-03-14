@@ -1,0 +1,9 @@
+module UART_Tx (
+	input wire clk, 
+	input wire rst, 
+	input wire [7:0] data_in, 
+	input wire start, 
+	output reg tx_out, 
+	output reg busy
+
+)

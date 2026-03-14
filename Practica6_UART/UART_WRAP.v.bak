@@ -1,0 +1,48 @@
+module UART_WRAP (
+	input CLOCK_50,
+	input MAX10_CLK1_50,
+	input [0:0] KEY,
+	input [9:0] SW,
+	inout [35:0] GPIO,
+	output [0:6] HEX0, 
+	output [0:6] HEX1,
+	output [0:6] HEX2, 
+	output [0:6] HEX3, 
+	
+);
+
+wire [7:0] data_out;
+
+UART_Tx #(.BAUD_RATE(9600), .CLOCK_FREQ(50000000), .BITS(8)) WRAP_Tx (
+	.clk(CLOCK_50),
+	.rst(~KEY[0]),
+	.start(SW[0]),
+	.data_in(SW[1:4]),
+	.tx_out(GPIO[0])
+);
+
+
+
+BCD_4displays #(N_in = 10, N_out = 7) BCD(
+	.bcd_in(data_out), 
+	.bcd_out(HEX0, HEX1, HEX2, HEX3)
+
+);
+
+
+
+
+
+UART_Rx #(.BAUD_RATE(9600), .CLOCK_FREQ(50000000), .BITS(8)) WRAP_Rx (
+	.clk(MAX10_CLK1_50),
+	.rst(~KEY[0]),
+	.rx_in(GPIO[1]),
+	.data_out(data_out)
+	
+	
+	
+	
+);
+
+endmodule 
+
