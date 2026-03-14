@@ -12,7 +12,6 @@ Al finalizar la comparación, el sistema debe indicar si la contraseña es corre
 - Cable **USB Blaster**
 - **Intel Quartus Prime Lite**
 - Archivos Verilog del módulo y su testbench
-- (Opcional) Evidencias: captura RTL y waveform de simulación
 
 ---
 
@@ -99,7 +98,7 @@ El testbench **`practica4_tb.v`** realiza la simulación:
 
 ---
 
-## Evidencias (agrega tus imágenes aquí)
+## Evidencias
 
 ### Diagrama RTL
 ![RTL](imagenes/RTLP4.png)
