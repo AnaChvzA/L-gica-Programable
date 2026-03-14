@@ -102,7 +102,7 @@ El archivo **`pwm_tb.v`** realiza pruebas básicas:
 
 ---
 
-## Evidencias (agrega tus imágenes aquí)
+## Evidencias 
 
 ### Diagrama RTL
 ![RTL](imagenes/RTLP5.png)
