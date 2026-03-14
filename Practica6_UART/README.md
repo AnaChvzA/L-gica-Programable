@@ -140,7 +140,7 @@ Prueba el sistema completo con `UART_TOP`:
 
 ---
 
-## Evidencias (agrega tus imágenes aquí)
+## Evidencias
 
 ### Diagrama RTL
 ![RTL](imagenes/RTLP6.png)
