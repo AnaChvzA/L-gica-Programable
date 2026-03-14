@@ -105,14 +105,14 @@ El archivo **`pwm_tb.v`** realiza pruebas básicas:
 ## Evidencias (agrega tus imágenes aquí)
 
 ### Diagrama RTL
-**RTL:** ![RTL](imagenes/RTLP5.png)
+![RTL](imagenes/RTLP5.png)
 
 ### Simulación (Waveform - Testbench)
-**Waveform:** ![Waveform](imagenes/TbP5.png)
+![Waveform](imagenes/TbP5.png)
 
 ### Servo en funcionamiento (DE10-Lite)
-**DE10-Lite funcionando:** ![DE10-Lite funcionando](imagenes/PruebaP5.jpeg)
-**DE10-Lite funcionando:** ![DE10-Lite funcionando](imagenes/Prueba2P5.jpeg)
+![DE10-Lite funcionando](imagenes/PruebaP5.jpeg)
+![DE10-Lite funcionando](imagenes/Prueba2P5.jpeg)
 
 ---
 
