@@ -1,0 +1,34 @@
+module RAMPA(
+
+    input clk,
+    input rst,
+    input [9:0] target,
+
+    output reg [9:0] angle_out
+
+);
+
+parameter STEP = 1;
+
+always @(posedge clk or posedge rst)
+begin
+
+    if(rst)
+        angle_out <= 90;
+
+    else begin
+
+        if(angle_out < target)
+            angle_out <= angle_out + STEP;
+
+        else if(angle_out > target)
+            angle_out <= angle_out - STEP;
+
+        else
+            angle_out <= angle_out;
+
+    end
+
+end
+
+endmodule

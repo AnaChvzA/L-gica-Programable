@@ -1,0 +1,14 @@
+module CONTADOR (
+	input wire clk, 
+	input wire rst, 
+	input wire selector,
+	input wire boton, 
+	output reg [15:0] pos,
+	output reg [7:0] pos_guardadas
+	
+
+);
+
+
+
+endmodule 

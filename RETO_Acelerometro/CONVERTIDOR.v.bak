@@ -1,0 +1,10 @@
+module CONVERTIDOR(
+input accel, //salida acelerometro 
+input data_mem, //salida del dato de memoria
+input selector, 
+
+
+);
+
+
+endmodule 
