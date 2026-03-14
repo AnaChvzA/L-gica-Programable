@@ -1,0 +1,14 @@
+module Debouncer (
+//Necesito un boton
+input Boton, 
+input clk, //el reloj de siempre
+output reg state, //el estado de si se le aplasta al botón o no
+output boton_nada,  //Salida de cuando dejan de aplastar el boton
+output boton_aplastado //Salida de cuando aplastan del boton
+
+);
+
+
+//Primera parte es hacer los dos flip flops y que se sincronicen con el boton
+
+reg Boton_0
